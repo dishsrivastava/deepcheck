@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>DeepCheck: Smarter Background Checks</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  
+   <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Page level plugin CSS-->
+  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <div id="wrapper">
+    
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <i class="fas fa-user-check"></i>
+        <div class="sidebar-brand-text mx-3">DeepCheck</div>
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html"> <i class="fas fa-fw fa-layer-group"></i> <span>Dashboard</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        DeepCheck Add Ons
+      </div>
+
+      <!-- Nav Item - Pages Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link" href="atf_form.html"> <i class="fas fa-fw fa-share-alt"></i> <span>ATF Online Form</span></a>
+        <a class="nav-link" href="diagnosis.html"> <i class="fas fa-fw fa-poll"></i> <span>Candidate Diagnosis</span></a>
+         
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        Other
+      </div>
+
+      <!-- Nav Item - Pages Collapse Menu -->
+      <li class="nav-item">
+		<a class="nav-link" href="#"> <i class="fas fa-fw fa-calendar"></i> <span>Alerts</span></a>
+        <a class="nav-link" href="#"> <i class="fas fa-fw fa-phone"></i> <span>Help Center</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+          <!-- Sidebar Toggle (Topbar) -->
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+
+     
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+
+            <!-- Nav Item - Alerts -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell fa-fw"></i>
+                <!-- Counter - Alerts -->
+                <span class="badge badge-danger badge-counter">2</span>
+              </a>
+              <!-- Dropdown - Alerts -->
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                <h6 class="dropdown-header">
+                  Alerts Center
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-danger">
+                      <i class="fas fa-calendar text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">March 10, 2019</div>
+                    Calendar Reminder: Upcoming Training
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-warning">
+                      <i class="fas fa-exclamation-triangle text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">January 2, 2019</div>
+                    <strong> Password Reset </strong> View Now!
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+              </div>
+            </li>
+            
+            
+            <div class="topbar-divider d-none d-sm-block"></div>
+
+            <!-- Nav Item - Account Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Steve McGarret</span>
+                <img class="img-profile rounded-circle" src="img/prof.jpg">
+              </a>
+              <!-- Dropdown - Account Information -->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+    			  Account
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Settings
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Logout
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+        </nav>
+        <!-- End of Topbar -->
+
+    
+    <!-- TABS  -->
+	<div id="content-wrapper">
+    <div class="container-fluid">
+   
+	<div class="container">
+		<ul class="nav nav-pills nav-justified">
+  			<li class="nav-item"> <a class="nav-link active" href="#" data-toggle="tab">Dashboard</a> </li>
+		</ul>
+		
+		<div class="tab-content">
+			<div class="tab-pane active" id="ViewMessages"> 
+			<!-- View Messages Table  -->
+			<h1> </h1>
+    			<div id="content-wrapper">
+      			<div class="container-fluid">
+        		<div class="card mb-3">
+         		<div class="card-header"> <i class="fas fa-table"></i> <strong> Recent Catalog </strong> </div>
+          		<div class="card-body">
+            	<div class="table-responsive">
+              	<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                	<thead> <tr>
+                    	<th>Candidate Name</th>
+                    	<th>Candidate Email</th>
+                    	<th>Result</th>
+                  	</tr> </thead>
+                	<tbody>
+                  		<tr>
+                    		<td>Steve McGarret</td>
+                    		<td>steve.mcgarret@gmail.com</td>
+                    		<td> 
+                    			<i class="fas fa-user-check"></i>
+  							</td>
+                  		</tr>
+                  		
+                  		<tr>
+                    		<td>Catherine Rollins</td>
+                    		<td>catherine.rollins@outlook.com</td>
+                    		<td> 
+                    			<i class="fas fa-user-times"></i>
+  							</td>
+                  		</tr>
+                  		
+                  		<tr>
+                    		<td>Danny Willians</td>
+                    		<td>danny.willians@yahoo.com</td>
+                    		<td> 
+                    			<i class="fas fa-user-check"></i>
+  							</td>
+                  		</tr>
+                  		
+                  		<tr>
+                    		<td>Chin Ho Kelly</td>
+                    		<td>chinho.kelly@gmail.com</td>
+                    		<td> 
+                    			<i class="fas fa-user-times"></i>
+  							</td>
+                  		</tr>
+                  		
+                  		<tr>
+                    		<td>Grace Willians</td>
+                    		<td>grace.williams@outlook.com</td>
+                    		<td> 
+                    			<i class="fas fa-user-check"></i>
+  							</td>
+                  		</tr>
+                  		
+                 		<tr>
+                    		<td>Doris McGarret</td>
+                    		<td>doris.mcgarret@yahoo.com</td>
+                    		<td> 
+                    			<i class="fas fa-user-times"></i>
+  							</td>
+                  		</tr>
+                  		
+                  		<tr>
+                    		<td>Jackie Neighbors</td>
+                    		<td>jackie.neighbors@gmail.com</td>
+                    		<td> 
+                    			<i class="fas fa-user-check"></i>
+  							</td>
+                  		</tr>
+                  		
+                  		<tr>
+                    		<td>Victoria King</td>
+                    		<td>victoria.king@outlook.com</td>
+                    		<td> 
+                    			<i class="fas fa-user-times"></i>
+  							</td>
+                  		</tr>
+                  		
+                  		<tr>
+                    		<td>Joe White</td>
+                    		<td>joe.white@yahoo.com</td>
+                    		<td> 
+                    			<i class="fas fa-user-check"></i>
+  							</td>
+                  		</tr>
+                  		
+                  		<tr>
+                    		<td>Leslie Berland</td>
+                    		<td>leslie.berland@gmail.com</td>
+                    		<td> 
+                    			<i class="fas fa-user-times"></i>
+  							</td>
+                  		</tr>
+                  		
+                  		<tr>
+                    		<td>Jack Dorsey</td>
+                    		<td>jack.dorsey@outlook.com</td>
+                    		<td> 
+                    			<i class="fas fa-user-check"></i>
+  							</td>
+                  		</tr>
+                  		
+                  		<tr>
+                    		<td>Lucas Ontario</td>
+                    		<td>lucas.ontario@yahoo.com</td>
+                    		<td> 
+                    			<i class="fas fa-user-times"></i>
+  							</td>
+                  		</tr>
+                  		
+                  		<tr>
+                    		<td>Sam O'Neil</td>
+                    		<td>sam.oneil@gmail.com</td>
+                    		<td> 
+                    			<i class="fas fa-user-check"></i>
+  							</td>
+                  		</tr>
+                  		
+                		<tr>
+                    		<td>Harry Mehta</td>
+                    		<td>harry.mehta@outlook.com</td>
+                    		<td> 
+                    			<i class="fas fa-user-times"></i>
+  							</td>
+                  		</tr>
+                  		
+               		 	<tr>
+                    		<td>Sara Haider</td>
+                    		<td>Sara.haider@gmail.com</td>
+                    		<td> 
+                    			<i class="fas fa-user-check"></i>
+  							</td>
+                  		</tr>
+                	</tbody> 
+              </table>
+            </div>
+          </div>
+          <div class="card-footer small text-muted">Updated now</div>
+        </div>
+      </div>
+    <!-- /.container-fluid -->
+    </div>			
+        		
+    	</div>
+			<div class="tab-pane" id="SendMessages"> 
+		<!-- Create Messages Table-->
+		<h1> </h1>
+    	<div id="content-wrapper">
+      	<div class="container-fluid">
+        <div class="card mb-3">
+          <div class="card-header">
+            <i class="fa fa-paper-plane"></i> <strong>Create Message</strong> </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            	<form name="sentMessage" id="contactForm" novalidate>
+
+                <thead> <tr>
+                	<th> To:
+                  	<div class="control-group">
+              		<div class="form-group floating-label-form-group controls">
+                			<input type="email" class="form-control" placeholder="Recipent Email Address">
+              		</div>
+            		</div>
+            		</th>
+                </thead> </tr> 
+                
+                <thead> <tr>
+                	<th> Subject:
+                    <div class="control-group">
+              		<div class="form-group floating-label-form-group controls">
+                		<input type="text" class="form-control" placeholder="Subject Here">
+              		</div>
+            		</div>
+            		</th>
+                </thead> </tr> 
+                
+                <thead> <tr>
+                	<th> Message:
+                	<div class="form-group">
+                		<textarea class="form-control" placeholder="Your Message Here" rows="20"></textarea>
+            		</div>
+            		</th>
+                </thead> </tr>
+                
+                <thead> </tr>
+                	<th> 
+                	<div id="success"></div>
+          			<button class="btn btn-danger" id="#">Send Message</button>
+          			</th>
+          		</thead> </tr> 
+          		
+                </form>
+
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.container-fluid -->
+
+			</div> <!-- closes create message tab  -->
+		</div> <!-- closes tab content container  -->
+	</div> <!-- closes entire tab container  -->
+
+      <!-- Sticky Footer -->
+      <footer class="sticky-footer">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Terms · Privacy · Policies</span>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    <!-- /.content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+   <!-- Modal -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Page level plugin JavaScript-->
+  <script src="vendor/chart.js/Chart.min.js"></script>
+  <script src="vendor/datatables/jquery.dataTables.js"></script>
+  <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin.min.js"></script>
+
+  <!-- Demo scripts for this page-->
+  <script src="js/demo/datatables-demo.js"></script>
+  <script src="js/demo/chart-area-demo.js"></script>
+
+</body>
+
+</html>
