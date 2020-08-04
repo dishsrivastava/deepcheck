@@ -14,12 +14,16 @@ Learn more in detail here: https://devpost.com/software/deepcheck-dphtv6
 
 # Demo 
 Check out our live site: https://mydeepcheck31986.azurewebsites.net/
+
 Note: This site may close down once our Azure student trial ends. 
 
 # Awards 
 WINNER Underscore VC - Best Use of Human-Centered AI
+
 WINNER Microsoft - Azure Champ Challenge
+
 WINNER Policy Makers and Citizens Political Polarization Challenge
+
 @ TechTogether Boston 2019
 
 # Back-End 
